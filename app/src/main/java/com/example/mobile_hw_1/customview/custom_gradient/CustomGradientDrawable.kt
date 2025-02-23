@@ -5,14 +5,17 @@ import android.graphics.*
 import android.graphics.Paint
 import android.graphics.ColorFilter
 import android.graphics.drawable.Drawable
-import android.util.Log
 import androidx.core.content.ContextCompat
 import com.example.mobile_hw_1.R
 import kotlin.math.cos
 import kotlin.math.sin
 
+
+/**
+*   My cool custom gradient drawable for entry point
+ */
 class CustomGradientDrawable(
-    private val context: Context
+    context: Context
 ) : Drawable()
 {
 
