@@ -15,6 +15,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.mobile_hw_1.customview.custom_gradient.CustomGradientDrawable
 import com.example.mobile_hw_1.ui.theme.Mobile_hw_1Theme
 
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.entry_point)
 
-        val layout = findViewById<LinearLayout>(R.id.root)
+        val layout = findViewById<ConstraintLayout>(R.id.root)
 
         val animatedDrawable = CustomGradientDrawable(this)
         layout.background = animatedDrawable

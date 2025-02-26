@@ -14,5 +14,11 @@
     <color name="light_blue_400">#FF29B6F6</color>
     <color name="light_blue_600">#FF039BE5</color>
     <color name="gray_400">#FFBDBDBD</color>
-    <color name="gray_600">#FF757575</color>
+    <color name="gray_600">#2C2C2E</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="feeling_bad">#33BBFF</color>
+    <color name="feeling_good">#00FF55</color>
+    <color name="feeling_productive">#FFAA00</color>
+    <color name="feeling_angry">#FF0000</color>
 </resources>

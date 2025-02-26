@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">mobile_hw_1</string>
+    <string name="entry_via_google">Войти через Google</string>
+    <string name="entry_greetings">Добро пожаловать</string>
+    <string name="chip_info_logs_count"><b>4</b> записи</string>
+    <string name="chip_info_daily_logs">в день: <b>2 записи</b></string>
+    <string name="chip_info_logs_combo">серия: <b>0</b> дней</string>
+    <string name="journal_how_are_you">Как вы сейчас чувствуете?</string>
+    <string name="add_note">Добавить записть</string>
+    <string name="log_card_date">вчера 23:45</string>
+    <string name="log_card_i_feel">Я чувствую</string>
+
+    <string name="feel_type_literally_me">выгорание</string>
+    <string name="feel_type_calm">спокойствие</string>
+    <string name="feel_type_efficient">продуктивность</string>
+    <string name="feel_type_nervous">беспокойство</string>
 </resources>
