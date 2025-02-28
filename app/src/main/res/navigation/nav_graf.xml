@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graf"
+    app:startDestination="@id/entryPoint">
+
+    <fragment
+        android:id="@+id/entryPoint"
+        android:name="com.example.mobile_hw_1.EntryPoint"
+        android:label="fragment_entry_point"
+        tools:layout="@layout/entry_point" >
+        <action
+            android:id="@+id/action_entryPoint_to_journal"
+            app:destination="@id/journal" />
+    </fragment>
+    <fragment
+        android:id="@+id/journal"
+        android:name="com.example.mobile_hw_1.Journal"
+        android:label="Journal"
+        tools:layout="@layout/journal">
+        <action
+            android:id="@+id/action_journal_to_circleGrid"
+            app:destination="@id/circleGrid" />
+    </fragment>
+    <fragment
+        android:id="@+id/circleGrid"
+        android:name="com.example.mobile_hw_1.CircleGrid"
+        android:label="CircleGrid"
+        tools:layout="@layout/circle_grid">
+        <action
+            android:id="@+id/action_circleGrid_to_journal"
+            app:destination="@id/journal" />
+    </fragment>
+</navigation>

@@ -10,8 +10,26 @@
     <string name="log_card_date">вчера 23:45</string>
     <string name="log_card_i_feel">Я чувствую</string>
 
-    <string name="feel_type_literally_me">выгорание</string>
-    <string name="feel_type_calm">спокойствие</string>
-    <string name="feel_type_efficient">продуктивность</string>
-    <string name="feel_type_nervous">беспокойство</string>
+    <string name="nav_menu_journal">Журнал</string>
+    <string name="nav_menu_stats">Статистика</string>
+    <string name="nav_menu_settings">Настройки</string>
+
+    <string name="circle_grid_placeholder">Выберите эмоцию, лучше всего описывающую, что вы сейчас чувствуете</string>
+
+    <string name="feel_type_rage">Ярость</string>
+    <string name="feel_type_envy">Зависть</string>
+    <string name="feel_type_burnout">Выгорание</string>
+    <string name="feel_type_depression">Депрессия</string>
+    <string name="feel_type_tension">Напряжение</string>
+    <string name="feel_type_anxiety">Беспокойство</string>
+    <string name="feel_type_fatigue">Усталось</string>
+    <string name="feel_type_apathy">Апатия</string>
+    <string name="feel_type_excitement">Возбуждение</string>
+    <string name="feel_type_confidence">Уверенность</string>
+    <string name="feel_type_calmness">Спокойствие</string>
+    <string name="feel_type_gratitude">Благодарность</string>
+    <string name="feel_type_delight">Восторг</string>
+    <string name="feel_type_happiness">Счастье</string>
+    <string name="feel_type_satisfaction">Удовлетворённость</string>
+    <string name="feel_type_security">Защищённость</string>
 </resources>

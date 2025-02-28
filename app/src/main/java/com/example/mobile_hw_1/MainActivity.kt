@@ -1,43 +1,41 @@
 package com.example.mobile_hw_1
 
-import android.animation.ValueAnimator
 import android.os.Bundle
-import android.util.Log
-import android.view.animation.LinearInterpolator
-import android.widget.LinearLayout
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.constraintlayout.widget.ConstraintLayout
-import com.example.mobile_hw_1.customview.custom_gradient.CustomGradientDrawable
-import com.example.mobile_hw_1.ui.theme.Mobile_hw_1Theme
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
+import androidx.viewbinding.ViewBindings
+import com.example.mobile_hw_1.databinding.MainLayoutBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class MainActivity : ComponentActivity() {
+
+class MainActivity : AppCompatActivity() {
+    private lateinit var bindings: MainLayoutBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.entry_point)
 
-        val layout = findViewById<ConstraintLayout>(R.id.root)
+        bindings = MainLayoutBinding.inflate(layoutInflater)
 
-        val animatedDrawable = CustomGradientDrawable(this)
-        layout.background = animatedDrawable
+        activity = this
 
-        val animator = ValueAnimator.ofFloat(0f, 1f).apply {
-            duration = 10000
-            repeatCount = ValueAnimator.INFINITE
-            interpolator = LinearInterpolator()
-            addUpdateListener { animation ->
-                val fraction = animation.animatedValue as Float
-                animatedDrawable.updatePositions(fraction)
-            }
-            start()
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navController = navHostFragment.navController
+        val navView: BottomNavigationView = bindings.bottomNav
+        navView.setupWithNavController(navController)
+
+        setContentView(bindings.root)
+    }
+
+    fun toggleNavBarVisibility(visibility: Boolean = false){
+        bindings.bottomNav.visibility = if (visibility) View.VISIBLE else View.GONE
+    }
+
+    companion object {
+        private lateinit var activity: MainActivity
+
+        fun getActivity(): MainActivity{
+            return activity
         }
     }
 }

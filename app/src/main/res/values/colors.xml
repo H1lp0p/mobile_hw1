@@ -21,4 +21,7 @@
     <color name="feeling_good">#00FF55</color>
     <color name="feeling_productive">#FFAA00</color>
     <color name="feeling_angry">#FF0000</color>
+
+    <color name="circle_grid_arrow_inactive_bg">#666666</color>
+    <color name="bottom_nav_bg">#333333</color>
 </resources>

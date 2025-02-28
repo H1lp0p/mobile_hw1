@@ -75,7 +75,7 @@
                 android:layout_marginTop="24dp">
 
                 <ImageButton
-                    android:id="@+id/imageButton"
+                    android:id="@+id/addNoteBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="70pt"
@@ -95,7 +95,7 @@
                     android:textColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+                    app:layout_constraintTop_toBottomOf="@+id/addNoteBtn" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -137,7 +137,7 @@
                         android:id="@+id/log_card_1_feel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/feel_type_literally_me"
+                        android:text="@string/feel_type_depression"
                         android:textColor="@color/feeling_bad"
                         android:textSize="28sp"
                         android:fontFamily="@font/gwen_trial_extrabold"
@@ -183,8 +183,8 @@
                         android:id="@+id/log_card_2_feel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/feel_type_literally_me"
-                        android:textColor="@color/feeling_bad"
+                        android:text="@string/feel_type_happiness"
+                        android:textColor="@color/feeling_good"
                         android:textSize="28sp"
                         android:fontFamily="@font/gwen_trial_extrabold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -229,8 +229,8 @@
                         android:id="@+id/log_card_3_feel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/feel_type_literally_me"
-                        android:textColor="@color/feeling_bad"
+                        android:text="@string/feel_type_confidence"
+                        android:textColor="@color/feeling_productive"
                         android:textSize="28sp"
                         android:fontFamily="@font/gwen_trial_extrabold"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -275,8 +275,8 @@
                         android:id="@+id/log_card_4_feel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/feel_type_literally_me"
-                        android:textColor="@color/feeling_bad"
+                        android:text="@string/feel_type_anxiety"
+                        android:textColor="@color/feeling_angry"
                         android:textSize="28sp"
                         android:fontFamily="@font/gwen_trial_extrabold"
                         app:layout_constraintBottom_toBottomOf="parent"
