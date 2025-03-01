@@ -17,11 +17,21 @@
     <color name="gray_600">#2C2C2E</color>
     <color name="transparent">#00000000</color>
 
-    <color name="feeling_bad">#33BBFF</color>
+    <color name="feeling_bad">#00AAFF</color>
+    <color name="feeling_bad_gradient">#33DDFF</color>
+
     <color name="feeling_good">#00FF55</color>
+    <color name="feeling_good_gradient">#33FFBB</color>
+
     <color name="feeling_productive">#FFAA00</color>
+    <color name="feeling_productive_gradient">#FFFF33</color>
+
     <color name="feeling_angry">#FF0000</color>
+    <color name="feeling_angry_gradient">#FF5533</color>
 
     <color name="circle_grid_arrow_inactive_bg">#666666</color>
     <color name="bottom_nav_bg">#333333</color>
+
+
+    <color name="circle_bg_color">#191919</color>
 </resources>
