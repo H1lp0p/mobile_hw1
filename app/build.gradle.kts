@@ -56,6 +56,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.8.8")
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.ui.test.junit4.android)
+    implementation(libs.androidx.viewpager2)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

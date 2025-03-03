@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stats_page1_title"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:fontFamily="@font/gwen_trial_regular"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5 записей"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/velasans_regular"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circles_test_placeholders"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

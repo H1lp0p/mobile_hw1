@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gwen_trial_regular"
+        android:text="@string/stats_page4_title"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinev4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bottom_cols_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="101dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/col1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_cols_end"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev1">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat11"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_good_gradient_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat11"
+            app:layout_constraintBottom_toBottomOf="@id/stat11"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/col1_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev1"
+        app:layout_constraintTop_toBottomOf="@id/col1"
+        android:layout_marginTop="16dp"
+        android:text="@string/stats_page4_col1"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev1"
+        app:layout_constraintTop_toBottomOf="@id/col1_txt"
+        android:layout_marginTop="4dp"
+        android:text="1"
+        android:textColor="@color/stats_page4_col_count"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/col2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_cols_end"
+        app:layout_constraintStart_toStartOf="@id/guidelinev1"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev2">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat21"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_angry_gradient_vertical"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat22"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_bad_productive_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineh22"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat21"
+            app:layout_constraintBottom_toBottomOf="@id/stat21"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat22"
+            app:layout_constraintBottom_toBottomOf="@id/stat22"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/col2_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelinev1"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev2"
+        app:layout_constraintTop_toBottomOf="@id/col3"
+        android:layout_marginTop="16dp"
+        android:text="@string/stats_page4_col3"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelinev1"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev2"
+        app:layout_constraintTop_toBottomOf="@id/col2_txt"
+        android:layout_marginTop="4dp"
+        android:text="1"
+        android:textColor="@color/stats_page4_col_count"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/col3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_cols_end"
+        app:layout_constraintStart_toStartOf="@id/guidelinev2"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev3">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat31"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_angry_gradient_vertical"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh31"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat31"
+            app:layout_constraintBottom_toBottomOf="@id/stat31"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat32"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_bad_gradient_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineh31"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="75%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat32"
+            app:layout_constraintBottom_toBottomOf="@id/stat32"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/col3_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelinev2"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev3"
+        app:layout_constraintTop_toBottomOf="@id/col4"
+        android:layout_marginTop="16dp"
+        android:text="@string/stats_page4_col4"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelinev2"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev3"
+        app:layout_constraintTop_toBottomOf="@id/col3_txt"
+        android:layout_marginTop="4dp"
+        android:text="1"
+        android:textColor="@color/stats_page4_col_count"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/col4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_cols_end"
+        app:layout_constraintStart_toStartOf="@id/guidelinev3"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev4">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat41"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_good_gradient_vertical"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh41"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat41"
+            app:layout_constraintBottom_toBottomOf="@id/stat41"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat42"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_bad_productive_vertical"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh42"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineh41"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat42"
+            app:layout_constraintBottom_toBottomOf="@id/stat42"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat43"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_angry_gradient_vertical"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineh43"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineh42"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat43"
+            app:layout_constraintBottom_toBottomOf="@id/stat43"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat44"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/stat_emote_bad_gradient_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guidelineh43"
+            app:shapeAppearance="@style/roundedStat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25%"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stat44"
+            app:layout_constraintBottom_toBottomOf="@id/stat44"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:fontFamily="@font/velasans_bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/col4_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelinev3"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev4"
+        app:layout_constraintTop_toBottomOf="@id/col5"
+        android:layout_marginTop="16dp"
+        android:text="@string/stats_page4_col5"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelinev3"
+        app:layout_constraintEnd_toStartOf="@id/guidelinev4"
+        app:layout_constraintTop_toBottomOf="@id/col4_txt"
+        android:layout_marginTop="4dp"
+        android:text="1"
+        android:textColor="@color/stats_page4_col_count"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/col5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="4dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintBottom_toBottomOf="@id/bottom_cols_end"
+        app:layout_constraintStart_toStartOf="@id/guidelinev4"
+        app:layout_constraintEnd_toEndOf="parent">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineh53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/stat51"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/bottom_nav_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearance="@style/roundedStat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/col5_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelinev4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/col1"
+        android:layout_marginTop="16dp"
+        android:text="@string/stats_page4_col1"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelinev4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/col5_txt"
+        android:layout_marginTop="4dp"
+        android:text="1"
+        android:textColor="@color/stats_page4_col_count"
+        android:textSize="14sp"
+        android:fontFamily="@font/velasans_regular"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

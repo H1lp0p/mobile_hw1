@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/bottomNav_journal"
+        android:id="@+id/journal"
         android:title="@string/nav_menu_journal"
         android:icon="@drawable/journal"/>
     <item
-        android:id="@+id/bottomNav_stats"
+        android:id="@+id/stats"
         android:title="@string/nav_menu_stats"
         android:icon="@drawable/stats"/>
     <item
-        android:id="@+id/bottomNav_settings"
+        android:id="@+id/settings"
         android:title="@string/nav_menu_settings"
         android:icon="@drawable/settings"/>
 </menu>

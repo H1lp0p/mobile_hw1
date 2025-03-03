@@ -30,17 +30,20 @@ class CircleGrid : Fragment(R.layout.circle_grid) {
         }
 
         bindings.backBtn.setOnClickListener{
-            findNavController().navigate(CircleGridDirections.actionCircleGridToJournal())
+            findNavController().popBackStack()
         }
 
         bindings.arrowBtn.setOnClickListener {
-            Log.i("l", "FFFFF")
+            findNavController().navigate(CircleGridDirections.actionCircleGridToAddNote())
         }
+        bindings.arrowBtn.isEnabled = false
     }
 
     fun updateSelectedEmote(newEmote: String, newColor: Int){
         emoteString = newEmote
         emoteColor = newColor
+
+        MainActivity.getActivity().vibrate()
 
         val text = bindings.basicText
         text.text = Html.fromHtml("<span style='color: ${emoteColor};'>${emoteString}</span><br>Это какая то там эмоция")

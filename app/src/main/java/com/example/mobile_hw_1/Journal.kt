@@ -83,5 +83,15 @@ class Journal : Fragment(R.layout.journal) {
         }
 
         bindings.circleJournal.setEmoteData(testEmote_1)
+
+        bindings.card1.setOnClickListener {
+            findNavController().navigate(JournalDirections.actionJournalToAddNote())
+        }
+        bindings.card2.setOnClickListener {
+            findNavController().navigate(JournalDirections.actionJournalToAddNote())
+        }
+        bindings.card3.setOnClickListener {
+            findNavController().navigate(JournalDirections.actionJournalToAddNote())
+        }
     }
 }

@@ -9,7 +9,8 @@
     android:orientation="vertical">
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        android:theme="@style/Theme.Mobile_hw_1.defaults"
         android:id="@+id/login"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"

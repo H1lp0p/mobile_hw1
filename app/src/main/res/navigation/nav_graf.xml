@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_journal_to_circleGrid"
             app:destination="@id/circleGrid" />
+        <action
+            android:id="@+id/action_journal_to_addNote"
+            app:destination="@id/addNote" />
     </fragment>
     <fragment
         android:id="@+id/circleGrid"
@@ -31,5 +34,27 @@
         <action
             android:id="@+id/action_circleGrid_to_journal"
             app:destination="@id/journal" />
+        <action
+            android:id="@+id/action_circleGrid_to_addNote"
+            app:destination="@id/addNote" />
     </fragment>
+    <fragment
+        android:id="@+id/addNote"
+        android:name="com.example.mobile_hw_1.AddNote"
+        android:label="AddNote"
+        tools:layout="@layout/add_node">
+        <action
+            android:id="@+id/action_addNote_to_journal"
+            app:destination="@id/journal" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.mobile_hw_1.Settings"
+        android:label="Settings"
+        tools:layout="@layout/settings"/>
+    <fragment
+        android:id="@+id/stats"
+        android:name="com.example.mobile_hw_1.Stats"
+        android:label="Stats"
+        tools:layout="@layout/stats"/>
 </navigation>

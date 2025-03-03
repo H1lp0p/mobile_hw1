@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stats_page2_title"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:fontFamily="@font/gwen_trial_regular"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingVertical="12dp"
+                android:layout_marginTop="24dp">
+
+                <TextView
+                    android:id="@+id/day1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text="Понедельник"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/velasans_regular"
+                    android:text="17 фев"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/day1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toEndOf="@id/day1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feel_type_calmness"
+                        android:textColor="#999999" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feel_type_happiness"
+                        android:textColor="#999999" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feel_type_excitement"
+                        android:textColor="#999999" />
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flow1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="45dp"
+                    app:constraint_referenced_ids="icon1_1,icon1_2,icon1_3"
+                    app:flow_horizontalAlign="end"
+                    app:flow_horizontalGap="1dp"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="1dp"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon1_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/literally_me" />
+
+                <ImageView
+                    android:id="@+id/icon1_2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/mithosis" />
+
+                <ImageView
+                    android:id="@+id/icon1_3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lightning_1" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/materialDivider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="12dp">
+                <TextView
+                    android:id="@+id/day2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Понедельник"
+                    android:fontFamily="@font/velasans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/day2"
+                    android:text="17 фев"
+                    android:fontFamily="@font/velasans_regular"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/day2"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feel_type_rage"
+                        android:textColor="#999999"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/feel_type_excitement"
+                        android:textColor="#999999"/>
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="45dp"
+                    app:constraint_referenced_ids="icon2_1,icon2_2"
+                    app:flow_horizontalAlign="end"
+                    app:flow_horizontalGap="1dp"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="1dp"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon2_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/soft_flower"/>
+
+                <ImageView
+                    android:id="@+id/icon2_2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/lightning_1"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="12dp">
+                <TextView
+                    android:id="@+id/day3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Понедельник"
+                    android:fontFamily="@font/velasans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/day3"
+                    android:text="17 фев"
+                    android:fontFamily="@font/velasans_regular"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/day3"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flow3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="45dp"
+                    app:constraint_referenced_ids="icon3_1"
+                    app:flow_horizontalAlign="end"
+                    app:flow_horizontalGap="1dp"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="1dp"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon3_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/emote_placeholder"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="12dp">
+                <TextView
+                    android:id="@+id/day4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Понедельник"
+                    android:fontFamily="@font/velasans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/day4"
+                    android:text="17 фев"
+                    android:fontFamily="@font/velasans_regular"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/day4"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flow4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="45dp"
+                    app:constraint_referenced_ids="icon4_1"
+                    app:flow_horizontalAlign="end"
+                    app:flow_horizontalGap="1dp"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="1dp"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon4_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/emote_placeholder"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="12dp">
+                <TextView
+                    android:id="@+id/day5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Понедельник"
+                    android:fontFamily="@font/velasans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/day5"
+                    android:text="17 фев"
+                    android:fontFamily="@font/velasans_regular"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/day5"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flow5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="45dp"
+                    app:constraint_referenced_ids="icon5_1"
+                    app:flow_horizontalAlign="end"
+                    app:flow_horizontalGap="1dp"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="1dp"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon5_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/emote_placeholder"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="12dp">
+                <TextView
+                    android:id="@+id/day6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Понедельник"
+                    android:fontFamily="@font/velasans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/day6"
+                    android:text="17 фев"
+                    android:fontFamily="@font/velasans_regular"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/day6"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flow6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="45dp"
+                    app:constraint_referenced_ids="icon6_1"
+                    app:flow_horizontalAlign="end"
+                    app:flow_horizontalGap="1dp"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="1dp"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon6_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/emote_placeholder"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="12dp">
+                <TextView
+                    android:id="@+id/day7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Понедельник"
+                    android:fontFamily="@font/velasans_regular"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/day7"
+                    android:text="17 фев"
+                    android:fontFamily="@font/velasans_regular"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/day7"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.helper.widget.Flow
+                    android:id="@+id/flow7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="45dp"
+                    app:constraint_referenced_ids="icon7_1"
+                    app:flow_horizontalAlign="end"
+                    app:flow_horizontalGap="1dp"
+                    app:flow_verticalAlign="top"
+                    app:flow_verticalGap="1dp"
+                    app:flow_wrapMode="chain"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/icon7_1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/emote_placeholder"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

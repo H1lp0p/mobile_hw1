@@ -7,8 +7,56 @@
     <string name="chip_info_logs_combo">серия: <b>0</b> дней</string>
     <string name="journal_how_are_you">Как вы сейчас чувствуете?</string>
     <string name="add_note">Добавить записть</string>
+
     <string name="log_card_date">вчера 23:45</string>
+    <string name="log_card_date_today">сегодня 11:23</string>
     <string name="log_card_i_feel">Я чувствую</string>
+
+    <string name="add_note_title">Запись</string>
+    <string name="add_note_question_1">Чем вы занимались?</string>
+    <string name="add_note_question_2">С кем вы были?</string>
+    <string name="add_note_question_3">Где вы были?</string>
+
+    <string name="add_note_chip_group_1_1">Приём пищи</string>
+    <string name="add_note_chip_group_1_2">Встреча с друзьями</string>
+    <string name="add_note_chip_group_1_3">Тренировка</string>
+    <string name="add_note_chip_group_1_4">Хобби</string>
+    <string name="add_note_chip_group_1_5">Отдых</string>
+    <string name="add_note_chip_group_1_6">Поездка</string>
+
+    <string name="add_note_chip_group_2_1">Один</string>
+    <string name="add_note_chip_group_2_2">Друзья</string>
+    <string name="add_note_chip_group_2_3">Семья</string>
+    <string name="add_note_chip_group_2_4">Коллеги</string>
+    <string name="add_note_chip_group_2_5">Партнёр</string>
+    <string name="add_note_chip_group_2_6">Питомец</string>
+
+    <string name="add_note_chip_group_3_1">Дом</string>
+    <string name="add_note_chip_group_3_2">Работа</string>
+    <string name="add_note_chip_group_3_3">Школа</string>
+    <string name="add_note_chip_group_3_4">Транспорт</string>
+    <string name="add_note_chip_group_3_5">Улица</string>
+
+    <string name="add_note_button_save">Сохранить</string>
+
+    <string name="settings_title">Настройки</string>
+    <string name="settings_send_notifs">Присылать напоминания</string>
+    <string name="settings_add_notif">Добавить напоминание</string>
+    <string name="settings_log_via_fingerprint">Вход по отпечатку пальца</string>
+    <string name="settings_log_IVAN">Иван Баран</string>
+    <string name="settings_bottom_sheet_notif">Напоминание</string>
+
+    <string name="stats_page1_title">Эмоции по категориям</string>
+    <string name="stats_page2_title">Эмоции по дням недели</string>
+    <string name="stats_page3_title">Самые частые эмоции</string>
+    <string name="stats_page4_title">Ваше настроение в течении дня</string>
+    <string name="stats_page4_col1">Раннеe утро</string>
+    <string name="stats_page4_col2">Утро</string>
+    <string name="stats_page4_col3">День</string>
+    <string name="stats_page4_col4">Вечер</string>
+    <string name="stats_page4_col5">Поздний вечер</string>
+
+
 
     <string name="nav_menu_journal">Журнал</string>
     <string name="nav_menu_stats">Статистика</string>

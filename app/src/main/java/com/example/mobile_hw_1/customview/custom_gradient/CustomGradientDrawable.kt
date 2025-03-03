@@ -30,6 +30,8 @@ class CustomGradientDrawable(
         intArrayOf(ContextCompat.getColor(context, R.color.entry_point_gradient_color3), Color.TRANSPARENT)
     )
 
+    private val colorWhite = ContextCompat.getColor(context, R.color.white)
+
     private val gradients = mutableListOf<RadialGradient>(
         RadialGradient(
             1.0f,
@@ -70,6 +72,8 @@ class CustomGradientDrawable(
     }
 
     override fun draw(canvas: Canvas) {
+        paint.color = colorWhite
+        canvas.drawRect(bounds, paint)
         for (gradient in gradients) {
             paint.shader = gradient
             canvas.drawRect(bounds, paint)
