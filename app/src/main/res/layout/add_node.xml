@@ -16,7 +16,8 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp">
                 <ImageButton
                     android:id="@+id/backBtn"
                     android:layout_width="48dp"
@@ -43,57 +44,10 @@
                     app:layout_constraintTop_toTopOf="@+id/backBtn" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/constraintLayout2"
+            <com.example.mobile_hw_1.customview.EmoteCard
+                android:id="@+id/emoteCard"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginHorizontal="24dp"
-                android:layout_marginTop="24dp"
-                android:background="@drawable/log_card_sadness"
-                android:padding="16dp"
-                app:layout_constraintTop_toBottomOf="@+id/backBtn"
-                tools:layout_editor_absoluteX="24dp">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/velasans_regular"
-                    android:text="@string/log_card_date_today"
-                    android:textColor="@color/white"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/velasans_regular"
-                    android:text="@string/log_card_i_feel"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toTopOf="@+id/log_card_1_feel"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <TextView
-                    android:id="@+id/log_card_1_feel"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/gwen_trial_extrabold"
-                    android:text="@string/feel_type_depression"
-                    android:textColor="@color/feeling_bad"
-                    android:textSize="28sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/literally_me"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_height="wrap_content"/>
 
             <TextView
                 android:id="@+id/quest1"

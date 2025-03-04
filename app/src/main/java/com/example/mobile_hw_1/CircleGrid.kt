@@ -34,7 +34,7 @@ class CircleGrid : Fragment(R.layout.circle_grid) {
         }
 
         bindings.arrowBtn.setOnClickListener {
-            findNavController().navigate(CircleGridDirections.actionCircleGridToAddNote())
+            findNavController().navigate(CircleGridDirections.actionCircleGridToAddNote(emoteString!!))
         }
         bindings.arrowBtn.isEnabled = false
     }

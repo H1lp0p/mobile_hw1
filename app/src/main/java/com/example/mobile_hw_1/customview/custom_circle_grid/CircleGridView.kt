@@ -82,7 +82,30 @@ class CircleGridView @JvmOverloads constructor(
     private var text = ""
     private var counter = 0
 
-
+    private val redEmotes = listOf(
+        context.getString(R.string.feel_type_rage),
+        context.getString(R.string.feel_type_envy),
+        context.getString(R.string.feel_type_tension),
+        context.getString(R.string.feel_type_anxiety),
+    )
+    private val yellowEmotes = listOf(
+        context.getString(R.string.feel_type_excitement),
+        context.getString(R.string.feel_type_delight),
+        context.getString(R.string.feel_type_happiness),
+        context.getString(R.string.feel_type_confidence),
+    )
+    private val blueEmotes = listOf(
+        context.getString(R.string.feel_type_burnout),
+        context.getString(R.string.feel_type_fatigue),
+        context.getString(R.string.feel_type_depression),
+        context.getString(R.string.feel_type_apathy),
+    )
+    private val greenEmotes = listOf(
+        context.getString(R.string.feel_type_calmness),
+        context.getString(R.string.feel_type_satisfaction),
+        context.getString(R.string.feel_type_gratitude),
+        context.getString(R.string.feel_type_security),
+    )
 
     private fun toPx(dp: Int): Float = TypedValue.applyDimension(
         TypedValue.COMPLEX_UNIT_DIP,
@@ -108,19 +131,17 @@ class CircleGridView @JvmOverloads constructor(
 
             var color = 0xFFFFFF.toInt()
 
-            if (x < rows / 2){
-                if (y < cols / 2){
+            when {
+                redEmotes.contains(emotionStrings[i]) -> {
                     color = colors[0]
                 }
-                else{
-                    color = colors[1]
-                }
-            }
-            else{
-                if (y < cols / 2){
+                blueEmotes.contains(emotionStrings[i]) -> {
                     color = colors[2]
                 }
-                else{
+                yellowEmotes.contains(emotionStrings[i]) -> {
+                    color = colors[1]
+                }
+                greenEmotes.contains(emotionStrings[i]) -> {
                     color = colors[3]
                 }
             }

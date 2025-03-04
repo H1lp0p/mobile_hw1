@@ -14,7 +14,7 @@
         android:fontFamily="@font/gwen_trial_regular"
         />
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -125,14 +125,14 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:text="Понедельник"
+                    android:text="Вторник"
                     android:fontFamily="@font/velasans_regular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/day2"
-                    android:text="17 фев"
+                    android:text="18 фев"
                     android:fontFamily="@font/velasans_regular"/>
 
                 <LinearLayout
@@ -201,14 +201,14 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:text="Понедельник"
+                    android:text="Среда"
                     android:fontFamily="@font/velasans_regular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/day3"
-                    android:text="17 фев"
+                    android:text="19 фев"
                     android:fontFamily="@font/velasans_regular"/>
 
                 <LinearLayout
@@ -260,14 +260,14 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:text="Понедельник"
+                    android:text="Четверг"
                     android:fontFamily="@font/velasans_regular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/day4"
-                    android:text="17 фев"
+                    android:text="20 фев"
                     android:fontFamily="@font/velasans_regular"/>
 
                 <LinearLayout
@@ -319,14 +319,14 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:text="Понедельник"
+                    android:text="Пятница"
                     android:fontFamily="@font/velasans_regular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/day5"
-                    android:text="17 фев"
+                    android:text="21 фев"
                     android:fontFamily="@font/velasans_regular"/>
 
                 <LinearLayout
@@ -378,14 +378,14 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:text="Понедельник"
+                    android:text="Суббота"
                     android:fontFamily="@font/velasans_regular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/day6"
-                    android:text="17 фев"
+                    android:text="21 фев"
                     android:fontFamily="@font/velasans_regular"/>
 
                 <LinearLayout
@@ -437,14 +437,14 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:text="Понедельник"
+                    android:text="Воскресенье"
                     android:fontFamily="@font/velasans_regular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/day7"
-                    android:text="17 фев"
+                    android:text="22 фев"
                     android:fontFamily="@font/velasans_regular"/>
 
                 <LinearLayout
@@ -487,6 +487,6 @@
                 android:layout_height="wrap_content"/>
 
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </LinearLayout>

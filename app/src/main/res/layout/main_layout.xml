@@ -18,16 +18,13 @@
         app:navGraph="@navigation/nav_graf" />
     
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:theme="@style/bottomNav"
         android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation"
-        android:background="@color/bottom_nav_bg"
-        app:itemTextAppearanceInactive="@color/white"
-        app:itemTextAppearanceActive="@color/black"
-        android:paddingBottom="16dp"
-        android:paddingTop="8dp"/>
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

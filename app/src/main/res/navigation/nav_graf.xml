@@ -43,6 +43,9 @@
         android:name="com.example.mobile_hw_1.AddNote"
         android:label="AddNote"
         tools:layout="@layout/add_node">
+        <argument
+            android:name="emote"
+            app:argType="string" />
         <action
             android:id="@+id/action_addNote_to_journal"
             app:destination="@id/journal" />

@@ -33,12 +33,21 @@ class AddNote: Fragment(R.layout.add_node), bottomSheetDataTransfer {
     private var groupInd = -1
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        val args = AddNoteArgs.fromBundle(requireArguments())
+        
+        val emoteText = args.emote
+
+        Log.i("transfer", emoteText)
+
         super.onViewCreated(view, savedInstanceState)
         MainActivity.getActivity().toggleNavBarVisibility(false)
 
         inflater = LayoutInflater.from(this.context)
 
         bindings = AddNodeBinding.bind(view)
+
+        bindings.emoteCard.setEmote(emoteText)
 
         bindings.backBtn.setOnClickListener {
             findNavController().popBackStack()

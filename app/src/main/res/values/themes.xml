@@ -7,20 +7,12 @@
         <item name="colorSecondaryContainer">@color/circle_grid_arrow_inactive_bg</item>
     </style>
 
-    <style name="bottomNav" parent="Widget.Material3.BottomNavigationView">
-        <item name="colorOnSurface">@color/black</item>
-        <item name="colorOnSurfaceVariant">@color/white</item>
-        <item name="colorSecondaryContainer">@color/white</item>
-        <item name="colorOnSecondaryContainer">@color/black</item>
-        <item name="itemActiveIndicatorStyle">@style/bottomNavItem</item>
-    </style>
-
-    <style name="bottomNavItem" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
-        <item name="android:color">@color/white</item>
-        <item name="colorOnSurface">@color/black</item>
-        <item name="colorOnSurfaceVariant">@color/white</item>
-        <item name="colorSecondaryContainer">@color/white</item>
-        <item name="colorOnSecondaryContainer">@color/black</item>
+    <style name="bottomNav" parent="Theme.Material3.Dark">
+            <item name="colorSurface">@color/bottom_nav_bg</item>
+            <item name="colorOnSurface">@color/white</item>
+            <item name="colorOnSecondaryContainer">@color/black</item>
+            <item name="colorSecondaryContainer">@color/white</item>
+            <item name="colorOnSurfaceVariant">@color/white</item>
     </style>
 
     <style name="Theme.Mobile_hw_1.chip_info" parent="Widget.Material3.Chip.Suggestion">
