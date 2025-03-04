@@ -56,28 +56,15 @@
                 android:fontFamily="@font/velasans_regular"
                 android:textColor="@color/white"/>
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <com.example.mobile_hw_1.customview.custon_stat.CustomStatView
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/stat_good_gradient"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@id/guideline12"
-                app:layout_constraintEnd_toStartOf="@+id/guideline12"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guideline11"
-                app:layout_constraintTop_toTopOf="parent"
-                app:shapeAppearance="@style/circleImageView" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                app:layout_constraintStart_toEndOf="@id/guideline11"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:fontFamily="@font/velasans_bold"
-                android:layout_marginStart="16dp"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="30dp"
+                app:bar="@drawable/stat_emote_good_gradient"
+                app:text="1"
+                app:percent="0.25" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline11"
@@ -85,34 +72,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.5" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.625"/>
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.75" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.875" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -141,29 +100,15 @@
                 android:fontFamily="@font/velasans_regular"
                 android:textColor="@color/white"/>
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <com.example.mobile_hw_1.customview.custon_stat.CustomStatView
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/stat_emote_productive_gradient"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline23"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guideline21"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:shapeAppearance="@style/circleImageView" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2"
-                app:layout_constraintStart_toEndOf="@id/guideline21"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:fontFamily="@font/velasans_bold"
-                android:layout_marginStart="16dp"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="30dp"
+                app:bar="@drawable/stat_emote_productive_gradient"
+                app:text="2"
+                app:percent="0.5" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline21"
@@ -171,34 +116,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.5" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.625"/>
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline23"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.75" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline24"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.875" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -227,29 +144,15 @@
                 android:fontFamily="@font/velasans_regular"
                 android:textColor="@color/white"/>
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <com.example.mobile_hw_1.customview.custon_stat.CustomStatView
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/stat_emote_bad_gradient"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline34"
-                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guideline31"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:shapeAppearance="@style/circleImageView" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"
-                app:layout_constraintStart_toEndOf="@id/guideline31"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:fontFamily="@font/velasans_bold"
-                android:layout_marginStart="16dp"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="30dp"
+                app:bar="@drawable/stat_emote_bad_gradient"
+                app:text="3"
+                app:percent="0.75" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline31"
@@ -257,34 +160,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.5" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.625"/>
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.75" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline34"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.875" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline35"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -313,29 +188,15 @@
                 android:fontFamily="@font/velasans_regular"
                 android:textColor="@color/white"/>
 
-            <com.google.android.material.imageview.ShapeableImageView
+            <com.example.mobile_hw_1.customview.custon_stat.CustomStatView
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:background="@drawable/stat_emote_angry_gradient"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/guideline45"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="@id/guideline41"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:shapeAppearance="@style/circleImageView" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4"
-                app:layout_constraintStart_toEndOf="@id/guideline41"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:fontFamily="@font/velasans_bold"
-                android:layout_marginStart="16dp"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_height="30dp"
+                app:bar="@drawable/stat_emote_angry_gradient"
+                app:text="4"
+                app:percent="1" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline41"
@@ -343,34 +204,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.5" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline42"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.625"/>
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline43"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.75" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline44"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="0.875" />
-
-            <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline45"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:layout_constraintGuide_percent="1" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

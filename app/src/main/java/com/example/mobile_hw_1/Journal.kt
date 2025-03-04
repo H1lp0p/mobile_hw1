@@ -122,7 +122,8 @@ class Journal : Fragment(R.layout.journal) {
 
             newCard.setOnClickListener {
                 findNavController().navigate(JournalDirections.actionJournalToAddNote(
-                    emote = newCard.getEmote()
+                    emote = newCard.getEmote(),
+                    date = newCard.getDate()
                 ))
             }
 

@@ -37,6 +37,7 @@ class AddNote: Fragment(R.layout.add_node), bottomSheetDataTransfer {
         val args = AddNoteArgs.fromBundle(requireArguments())
         
         val emoteText = args.emote
+        val dateText = args.date
 
         Log.i("transfer", emoteText)
 
@@ -48,6 +49,7 @@ class AddNote: Fragment(R.layout.add_node), bottomSheetDataTransfer {
         bindings = AddNodeBinding.bind(view)
 
         bindings.emoteCard.setEmote(emoteText)
+        bindings.emoteCard.setDate(dateText)
 
         bindings.backBtn.setOnClickListener {
             findNavController().popBackStack()

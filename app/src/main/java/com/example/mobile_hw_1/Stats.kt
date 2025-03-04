@@ -1,6 +1,7 @@
 package com.example.mobile_hw_1
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,10 +10,9 @@ import android.widget.SimpleAdapter
 import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.example.mobile_hw_1.stats_fragments.DTO
-import com.example.mobile_hw_1.stats_fragments.Emotion
 import com.example.mobile_hw_1.stats_fragments.ViewPageAdapter
 import java.util.Date
 
@@ -23,17 +23,17 @@ class Stats : Fragment(R.layout.stats) {
 
     private lateinit var viewPager: ViewPager2
 
-    private val testDto = DTO(
-        listOf(
-        Emotion("депрессия", 1)),
-        listOf("10-11 фев")
-    )
+    private lateinit var statsViewModel : StatsViewModel
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        statsViewModel = ViewModelProvider(requireActivity())[StatsViewModel::class.java]
+
+
+
         viewPager = view.findViewById(R.id.viewPager)
-        val adapter = ViewPageAdapter(testDto,this)
+        val adapter = ViewPageAdapter(this)
         viewPager.adapter = adapter
 
         viewPager.registerOnPageChangeCallback(object: ViewPager2.OnPageChangeCallback() {
@@ -48,9 +48,9 @@ class Stats : Fragment(R.layout.stats) {
                 dots.forEachIndexed{ index, dot ->
                     dot.setColorFilter(
                         if (index == position)
-                            this@Stats.requireActivity().getColor(R.color.white)
+                            requireContext().getColor(R.color.white)
                         else
-                            this@Stats.requireActivity().getColor(R.color.circle_grid_arrow_inactive_bg)
+                            requireContext().getColor(R.color.circle_grid_arrow_inactive_bg)
                     )
                 }
             }

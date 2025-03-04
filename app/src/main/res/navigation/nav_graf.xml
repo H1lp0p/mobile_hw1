@@ -46,6 +46,9 @@
         <argument
             android:name="emote"
             app:argType="string" />
+        <argument
+            android:name="date"
+            app:argType="string" />
         <action
             android:id="@+id/action_addNote_to_journal"
             app:destination="@id/journal" />

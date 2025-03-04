@@ -4,4 +4,9 @@
         <attr name="emote" format="string"/>
         <attr name="date" format="string"/>
     </declare-styleable>
+    <declare-styleable name="CustomStatView">
+        <attr name="bar" format="reference|color"/>
+        <attr name="percent" format="float"/>
+        <attr name="text" format="string"/>
+    </declare-styleable>
 </resources>

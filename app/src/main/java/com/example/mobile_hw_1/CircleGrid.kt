@@ -34,7 +34,10 @@ class CircleGrid : Fragment(R.layout.circle_grid) {
         }
 
         bindings.arrowBtn.setOnClickListener {
-            findNavController().navigate(CircleGridDirections.actionCircleGridToAddNote(emoteString!!))
+            findNavController().navigate(CircleGridDirections.actionCircleGridToAddNote(
+                emoteString!!,
+                "Сегодя, 20:31 (прибыл Годжо Сатору)"
+                ))
         }
         bindings.arrowBtn.isEnabled = false
     }

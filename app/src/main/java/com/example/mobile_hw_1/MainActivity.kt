@@ -9,6 +9,7 @@ import android.os.Vibrator
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import androidx.viewbinding.ViewBindings
@@ -18,8 +19,40 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var bindings: MainLayoutBinding
+
+    private lateinit var statsViewModel: StatsViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        statsViewModel = ViewModelProvider(this)[StatsViewModel::class.java]
+
+        statsViewModel.setData(listOf(
+            EmoteNote(
+                this.getString(R.string.feel_type_calmness),
+                "сегодня, 23:30",
+                1,
+                DayTime.lateEvening
+            ),
+            EmoteNote(
+                this.getString(R.string.feel_type_rage),
+                "сегодня, 12:30",
+                1,
+                DayTime.midday
+            ),
+            EmoteNote(
+                this.getString(R.string.feel_type_depression),
+                "вчера, 21:30",
+                7,
+                DayTime.evening
+            ),
+            EmoteNote(
+                this.getString(R.string.feel_type_confidence),
+                "вчера, 10:30",
+                7,
+                DayTime.morning
+            ),
+        ))
 
         bindings = MainLayoutBinding.inflate(layoutInflater)
 

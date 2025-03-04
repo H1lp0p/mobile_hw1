@@ -77,6 +77,7 @@ class EmoteCard @JvmOverloads constructor(
             typedArray.getString(R.styleable.EmoteCard_date)?.let{
                 date = it
             }
+            typedArray.recycle()
         }
 
         val emoteTextView = findViewById<TextView>(R.id.emote_card_feel)
@@ -148,10 +149,13 @@ class EmoteCard @JvmOverloads constructor(
     }
 
     fun setDate(newDate: String){
+        date = newDate
         findViewById<TextView>(R.id.date).text = newDate
     }
 
     fun getEmote() : String = emoteText
+
+    fun getDate() : String = date
 
     override fun onLayout(p0: Boolean, p1: Int, p2: Int, p3: Int, p4: Int) {
         val count = childCount
