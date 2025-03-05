@@ -31,7 +31,7 @@ class CustomCircleJournal @JvmOverloads constructor(
     private var emoteMap : MutableMap<String, EmoteData> = mutableMapOf()
 
     private var fullCount = 0
-    private var maxCount = 2
+    private var maxCount = 3
 
     private var emoteData = listOf<EmoteData>()
 
@@ -95,9 +95,9 @@ class CustomCircleJournal @JvmOverloads constructor(
         context.resources.displayMetrics
     )
 
-    fun setEmoteData(dataList: List<Pair<String, Pair<IntArray, FloatArray>>>, newMax: Int = 2){
+    fun setEmoteData(dataList: List<Pair<String, Pair<IntArray, FloatArray>>>, newMax: Int = -1){
         fullCount = dataList.size
-        maxCount = newMax
+        maxCount = if (newMax == -1) dataList.size else newMax
         emoteMap.clear()
         if (fullCount > 0){
             dataList.forEach { emote ->

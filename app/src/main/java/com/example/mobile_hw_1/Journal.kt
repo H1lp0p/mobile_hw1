@@ -96,11 +96,11 @@ class Journal : Fragment(R.layout.journal) {
 
         bindings.testSwitchToCircle.setOnClickListener{
             if (testFlag == 0){
-                bindings.circleJournal.setEmoteData(testEmote_1)
+                bindings.circleJournal.setEmoteData(testEmote_1, 3)
                 testFlag = 1
             }
             else if (testFlag == 1){
-                bindings.circleJournal.setEmoteData(testEmote_2)
+                bindings.circleJournal.setEmoteData(testEmote_2, 2)
                 testFlag = 2
             }
             else{

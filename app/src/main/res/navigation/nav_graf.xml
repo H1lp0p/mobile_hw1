@@ -42,7 +42,7 @@
         android:id="@+id/addNote"
         android:name="com.example.mobile_hw_1.AddNote"
         android:label="AddNote"
-        tools:layout="@layout/add_node">
+        tools:layout="@layout/add_note">
         <argument
             android:name="emote"
             app:argType="string" />

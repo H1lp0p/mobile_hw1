@@ -1,7 +1,5 @@
 package com.example.mobile_hw_1
 
-import android.content.Context
-import android.content.DialogInterface
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -12,10 +10,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.mobile_hw_1.databinding.AddNodeBinding
-import com.example.mobile_hw_1.databinding.JournalBinding
-import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.google.android.material.bottomsheet.BottomSheetDialog
+import com.example.mobile_hw_1.databinding.AddNoteBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.chip.Chip
 import com.google.android.material.chip.ChipGroup
@@ -24,9 +19,9 @@ interface bottomSheetDataTransfer {
     fun onDataSelected(data: String)
 }
 
-class AddNote: Fragment(R.layout.add_node), bottomSheetDataTransfer {
+class AddNote: Fragment(R.layout.add_note), bottomSheetDataTransfer {
 
-    private lateinit var bindings: AddNodeBinding
+    private lateinit var bindings: AddNoteBinding
 
     private lateinit var inflater: LayoutInflater
 
@@ -46,7 +41,7 @@ class AddNote: Fragment(R.layout.add_node), bottomSheetDataTransfer {
 
         inflater = LayoutInflater.from(this.context)
 
-        bindings = AddNodeBinding.bind(view)
+        bindings = AddNoteBinding.bind(view)
 
         bindings.emoteCard.setEmote(emoteText)
         bindings.emoteCard.setDate(dateText)
