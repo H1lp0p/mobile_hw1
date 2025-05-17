@@ -196,7 +196,7 @@
                 android:layout_height="30dp"
                 app:bar="@drawable/stat_emote_angry_gradient"
                 app:text="4"
-                app:percent="1" />
+                app:percent="0.5" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline41"

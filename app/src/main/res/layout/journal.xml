@@ -6,14 +6,18 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/black">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="-99dp">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:gravity="center_horizontal"
+            android:orientation="vertical"
             android:paddingHorizontal="24dp">
 
             <com.google.android.material.chip.ChipGroup
@@ -25,31 +29,31 @@
                 app:singleLine="true">
 
                 <com.google.android.material.chip.Chip
-                    android:checkable="false"
                     style="@style/Theme.Mobile_hw_1.chip_info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checkable="false"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="4dp"
                     android:text="@string/chip_info_logs_count"
                     android:textAppearance="@style/Theme.Mobile_hw_1.chip_info.textAppearance" />
 
                 <com.google.android.material.chip.Chip
-                    android:checkable="false"
                     android:id="@+id/testSwitchToCircle"
                     style="@style/Theme.Mobile_hw_1.chip_info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checkable="false"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="4dp"
                     android:text="@string/chip_info_daily_logs"
                     android:textAppearance="@style/Theme.Mobile_hw_1.chip_info.textAppearance" />
 
                 <com.google.android.material.chip.Chip
-                    android:checkable="false"
                     style="@style/Theme.Mobile_hw_1.chip_info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checkable="false"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="4dp"
                     android:text="@string/chip_info_logs_combo"
@@ -59,12 +63,12 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/gwen_trial_regular"
                 android:text="@string/journal_how_are_you"
                 android:textAlignment="textStart"
-                android:layout_marginTop="24dp"
-                android:textSize="40sp"
                 android:textColor="@color/white"
-                android:fontFamily="@font/gwen_trial_regular"/>
+                android:textSize="40sp" />
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -90,9 +94,9 @@
                         android:id="@+id/addNoteBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
                         android:background="@color/transparent"
                         android:src="@drawable/add_btn"
-                        android:layout_gravity="center"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -102,8 +106,8 @@
                         android:id="@+id/textView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
                         android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
                         android:fontFamily="@font/velasans_medium"
                         android:text="@string/add_note"
                         android:textColor="@color/white"
@@ -111,7 +115,6 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/addNoteBtn" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 
             </FrameLayout>
@@ -125,13 +128,10 @@
 
             <LinearLayout
                 android:id="@+id/cardContainer"
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp">
-            </LinearLayout>
-
-
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"></LinearLayout>
 
         </LinearLayout>
     </ScrollView>

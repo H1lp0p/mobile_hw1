@@ -61,7 +61,7 @@ class CustomStatView @JvmOverloads constructor(
         bar.layoutParams = l
         bar.forceLayout()
         bar.requestLayout()
-        Log.i("progress", "$progress ${(progress * wid).toInt()} ${bar.layoutParams.width} ${bar.width}")
+        //Log.i("progress", "$progress ${(progress * wid).toInt()} ${bar.layoutParams.width} ${bar.width}")
 
     }
 

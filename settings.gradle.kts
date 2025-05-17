@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "mobile_hw_1"
 include(":app")
- 
+include(":app:domain")
