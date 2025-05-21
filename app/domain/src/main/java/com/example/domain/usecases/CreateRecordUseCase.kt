@@ -6,9 +6,9 @@ import com.example.domain.repositories.RecordsRepository
 class CreateRecordUseCase (private val recordsRepository: RecordsRepository) {
     suspend fun createRecord(
         emotion: EmotionGroup,
-        tagsWhatDone: Array<String>,
-        tagsWithWho: Array<String>,
-        tagsWhereBeen: Array<String>
+        tagsWhatDone: List<String>,
+        tagsWithWho: List<String>,
+        tagsWhereBeen: List<String>
     ){
         return recordsRepository.createRecord(
             emotion = emotion,

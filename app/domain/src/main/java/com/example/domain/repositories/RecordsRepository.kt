@@ -7,11 +7,15 @@ import java.time.LocalDate
 interface RecordsRepository {
     suspend fun createRecord(
         emotion: EmotionGroup,
-        tagsWhatDone: Array<String>,
-        tagsWithWho: Array<String>,
-        tagsWhereBeen: Array<String>): Unit
+        tagsWhatDone: List<String>,
+        tagsWithWho: List<String>,
+        tagsWhereBeen: List<String>): Unit
 
     suspend fun getRecordList(
         fromDate: LocalDate,
         toDate: LocalDate): List<RecordModel>
+
+    suspend fun getRecordForSpecDay(
+        date: LocalDate
+    ): List<RecordModel>
 }
